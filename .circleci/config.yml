@@ -30,6 +30,9 @@ jobs:
           name: Create page
           command: npm run build
       - run:
+          name: Add CNAME
+          command: echo "opensource.fiverr.com" > dist/CNAME
+      - run:
           name: Check for changes
           command: |
             cd dist &&
@@ -53,3 +56,15 @@ workflows:
             branches:
               only:
                 - build
+
+  scheduled:
+    jobs:
+      - build
+    triggers:
+      - schedule:
+          # Every day at 12:00
+          cron: "0 12 * * *"
+          filters:
+            branches:
+              only:
+                - master
