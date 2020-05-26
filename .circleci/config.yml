@@ -1,0 +1,55 @@
+version: 2.1
+jobs:
+  build:
+    working_directory: ~/app
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: npm i
+      - run:
+          name: Verify syntax
+          command: npm run lint
+      - run:
+          name: Set user
+          command: |
+            git config --global user.name $CIRCLE_USERNAME &&
+            git config --global user.email ${CIRCLE_USERNAME}@users.noreply.github.com
+      - run:
+          name: Clone master branch
+          command: git clone -b master --single-branch $CIRCLE_REPOSITORY_URL dist
+      - run:
+          name: Clean everything
+          command: |
+            cd dist &&
+            ls -a | grep -v .git | grep -v .circleci | egrep -vU "\.$" | xargs rm -rf &&
+            cd -
+      - run:
+          name: Create page
+          command: npm run build
+      - run:
+          name: Check for changes
+          command: |
+            cd dist &&
+            git diff --exit-code && circleci step halt
+            cd -
+      - run:
+          name: Commit
+          command: |
+            cd dist &&
+            git add . &&
+            git commit -m "$(curl -s whatthecommit.com/index.txt)" &&
+            git push origin master --force-with-lease &&
+            cd -
+workflows:
+  version: 2.1
+  website:
+    jobs:
+      - build:
+          context: org-global
+          filters:
+            branches:
+              only:
+                - build
