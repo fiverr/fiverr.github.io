@@ -24,11 +24,6 @@ projects:
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
-  - title: Periodic Lighthouse Scores Report
-    link: https://hub.docker.com/r/fiverr/lighthouse-scores-to-email
-    reponame: lighthouse-scores-to-email
-    language: Docker
-    description: Send simple PageSpeed scores to your email.
 links:
   - title: Visit our Github page
     link: https://github.com/fiverr

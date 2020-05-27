@@ -6,9 +6,7 @@ import './index.scss';
 const Links = ({ feed, links }) => (<div className="links">
     {
         feed.length && <h2>
-            <a href="https://medium.com/fiverr-engineering" rel={rel}>
-                Fiverr Engineering blog
-            </a>
+            Fiverr Engineering blog
         </h2>
     }
     {
@@ -19,6 +17,7 @@ const Links = ({ feed, links }) => (<div className="links">
                 </a>)
         )
     }
+    <a href="https://medium.com/fiverr-engineering" rel={rel}>Discover more content from our engineers.</a>
     {
         links.length && <h2>
             Other stuff
