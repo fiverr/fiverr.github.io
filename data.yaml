@@ -8,7 +8,7 @@ projects:
     link: https://github.com/fiverr/rollout_service
     reponame: rollout_service
     language: Ruby
-    description: A Grape service that expose rollout gem via RESTful endpoints.
+    description: A Grape service that exposes rollout gem via RESTful endpoints.
   - title: Rollout Dashboard
     link: https://github.com/fiverr/rollout_dashboard
     reponame: rollout_dashboard
@@ -24,6 +24,11 @@ projects:
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
+  - title: AfterBuild Webpack Plugin
+    link: https://fiverr.github.io/afterbuild-webpack-plugin
+    reponame: afterbuild-webpack-plugin
+    language: Javascript
+    description: A webpack plugin that registers a script to run after the build has finished.
 links:
   - title: Visit our Github page
     link: https://github.com/fiverr

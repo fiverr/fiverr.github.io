@@ -1,6 +1,6 @@
 import React from 'react';
 import { arrayOf, exact, string } from 'prop-types';
-import { rel } from '../consts';
+import Card from '../Card';
 import './index.scss';
 
 class Cards extends React.Component {
@@ -26,26 +26,15 @@ class Cards extends React.Component {
 
         const { stars = {} } = state || {};
 
-        return (<ul className="cards">
-            {
-                projects.map(
-                    ({ title, link, reponame, language, description }) =>
-                        (<li className={language.toLowerCase()} key={link}>
-                            <a href={link} rel={rel}>
-                                <h3>
-                                    { title }
-                                </h3>
-                                <span>{ language }</span>
-                                <p>
-                                    { description } {
-                                        stars[reponame] && <ins>⭐️{ stars[reponame] }</ins>
-                                    }
-                                </p>
-                            </a>
-                        </li>)
-                )
-            }
-        </ul>);
+        return (
+            <ul className="cards">
+                {
+                    projects.map(
+                        ({ reponame, ...project }) => <Card key={reponame} {...project} stars={stars[reponame]}/>
+                    )
+                }
+            </ul>
+        );
     }
 }
 
