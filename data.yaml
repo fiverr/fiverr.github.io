@@ -1,6 +1,6 @@
 projects:
   - title: Passable
-    link: https://github.com/fiverr/passable/
+    link: https://opensource.fiverr.com/passable/
     reponame: passable
     language: Javascript
     description: Declarative data validations.
@@ -20,7 +20,7 @@ projects:
     language: Javascript
     description: Isomorphic translation engine. Mimics Rails' i18n interface.
   - title: StatsD Client
-    link: https://github.com/fiverr/node-statsd-client
+    link: https://opensource.fiverr.com/node-statsd-client/
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
