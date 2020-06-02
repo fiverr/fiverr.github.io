@@ -1,6 +1,6 @@
 projects:
   - title: Passable
-    link: https://github.com/fiverr/passable/
+    link: https://opensource.fiverr.com/passable/
     reponame: passable
     language: Javascript
     description: Declarative data validations.
