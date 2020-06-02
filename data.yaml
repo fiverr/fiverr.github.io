@@ -19,16 +19,31 @@ projects:
     reponame: i18n.js
     language: Javascript
     description: Isomorphic translation engine. Mimics Rails' i18n interface.
-  - title: StatsD Client
-    link: https://opensource.fiverr.com/node-statsd-client/
-    reponame: node-statsd-client
+  - title: RDS slowlog parse
+    link: https://github.com/fiverr/node-rds-slow-log-parse
+    reponame: node-rds-slow-log-parse
     language: Javascript
-    description: A feature packed StatsD client with plenty of configuration options.
+    description: Parse RDS log lines.
+  - title: MongoDB slowlog parse
+    link: https://github.com/fiverr/node-mongo-slow-log-parse
+    reponame: node-mongo-slow-log-parse
+    language: Javascript
+    description: Parse MongoDB log lines.
+  - title: Elasticsearch slowlog parse
+    link: https://github.com/fiverr/node-es-slow-log-parse
+    reponame: node-es-slow-log-parse
+    language: Javascript
+    description: Parse Elasticsearch log lines.
   - title: AfterBuild Webpack Plugin
     link: https://github.com/fiverr/afterbuild-webpack-plugin
     reponame: afterbuild-webpack-plugin
     language: Javascript
     description: A webpack plugin that registers a callback function to run after the build has finished.
+  - title: StatsD Client
+    link: https://github.com/fiverr/node-statsd-client
+    reponame: node-statsd-client
+    language: Javascript
+    description: A feature packed StatsD client with plenty of configuration options.
 links:
   - title: Visit our Github page
     link: https://github.com/fiverr
