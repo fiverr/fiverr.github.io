@@ -1,6 +1,6 @@
 projects:
   - title: Passable
-    link: https://fiverr.github.io/passable/
+    link: https://github.com/fiverr/passable/
     reponame: passable
     language: Javascript
     description: Declarative data validations.
@@ -20,15 +20,15 @@ projects:
     language: Javascript
     description: Isomorphic translation engine. Mimics Rails' i18n interface.
   - title: StatsD Client
-    link: https://fiverr.github.io/node-statsd-client
+    link: https://github.com/fiverr/node-statsd-client
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
   - title: AfterBuild Webpack Plugin
-    link: https://fiverr.github.io/afterbuild-webpack-plugin
+    link: https://github.com/fiverr/afterbuild-webpack-plugin
     reponame: afterbuild-webpack-plugin
     language: Javascript
-    description: A webpack plugin that registers a script to run after the build has finished.
+    description: A webpack plugin that registers a callback function to run after the build has finished.
 links:
   - title: Visit our Github page
     link: https://github.com/fiverr
