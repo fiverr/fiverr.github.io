@@ -1,0 +1,10 @@
+:root {
+    --borders-default: #e5e5e5;
+    --borders-hover: black;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .5em;
+}

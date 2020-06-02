@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import data from '../data.yaml';
 import feed from '../feed.json';
-import Cards from './cards';
-import Links from './links';
+import Cards from './components/Cards';
+import Links from './components/Links';
 import './index.scss';
 
 ReactDOM.render(<Cards projects={data.projects}/>, document.querySelector('main'));

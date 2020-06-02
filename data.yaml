@@ -1,6 +1,6 @@
 projects:
   - title: Passable
-    link: https://fiverr.github.io/passable/
+    link: https://github.com/fiverr/passable/
     reponame: passable
     language: Javascript
     description: Declarative data validations.
@@ -8,7 +8,7 @@ projects:
     link: https://github.com/fiverr/rollout_service
     reponame: rollout_service
     language: Ruby
-    description: A Grape service that expose rollout gem via RESTful endpoints.
+    description: A Grape service that exposes rollout gem via RESTful endpoints.
   - title: Rollout Dashboard
     link: https://github.com/fiverr/rollout_dashboard
     reponame: rollout_dashboard
@@ -20,10 +20,15 @@ projects:
     language: Javascript
     description: Isomorphic translation engine. Mimics Rails' i18n interface.
   - title: StatsD Client
-    link: https://fiverr.github.io/node-statsd-client
+    link: https://github.com/fiverr/node-statsd-client
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
+  - title: AfterBuild Webpack Plugin
+    link: https://github.com/fiverr/afterbuild-webpack-plugin
+    reponame: afterbuild-webpack-plugin
+    language: Javascript
+    description: A webpack plugin that registers a callback function to run after the build has finished.
 links:
   - title: Visit our Github page
     link: https://github.com/fiverr
