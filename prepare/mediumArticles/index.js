@@ -1,17 +1,11 @@
-const { readFile, writeFile } = require('fs').promises;
 const { xml2json } = require('xml-js');
+const request = require('../request');
 
-(async() => {
-
-    const xml = await readFile('feed.xml');
+module.exports = async() => {
+    const xml = await request('https://medium.com/feed/fiverr-engineering');
     const feed = JSON.parse(xml2json(xml));
-    const articles = extract(feed);
-
-    writeFile(
-        'feed.json',
-        JSON.stringify(articles, null, 2)
-    );
-})();
+    return { articles: extract(feed) };
+};
 
 const extract = ({ elements: [ { elements: [ { elements } ] } ] }) => elements.filter(({ name }) => name === 'item').map(pull);
 
