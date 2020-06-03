@@ -4,7 +4,7 @@
   "description": "Home for some OSS",
   "private": true,
   "scripts": {
-    "prepare": "curl https://medium.com/feed/fiverr-engineering > feed.xml && node ./scripts/getmediumarticles.js",
+    "prepare": "node ./prepare",
     "build": "parcel build src/index.pug --public-url .",
     "start": "parcel src/index.pug",
     "lint": "eslint '**/*.js'"

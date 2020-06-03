@@ -3,15 +3,15 @@ import { arrayOf, exact, string } from 'prop-types';
 import { rel } from '../../consts';
 import './index.scss';
 
-const Links = ({ feed, links }) => (
+const Links = ({ articles, links }) => (
     <div className="links">
         {
-            feed.length && <h2>
+            articles.length && <h2>
                 Fiverr Engineering blog
             </h2>
         }
         {
-            feed.map(
+            articles.map(
                 ({ title, link }) => (
                     <a key={link} href={link} rel={rel}>
                         { title }
@@ -38,7 +38,7 @@ const Links = ({ feed, links }) => (
 );
 
 Links.propTypes = {
-    feed: arrayOf(exact({
+    articles: arrayOf(exact({
         title: string,
         link: string
     })),
