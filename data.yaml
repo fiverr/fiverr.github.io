@@ -40,7 +40,7 @@ projects:
     language: Javascript
     description: A webpack plugin that registers a callback function to run after the build has finished.
   - title: StatsD Client
-    link: https://github.com/fiverr/node-statsd-client
+    link: https://opensource.fiverr.com/node-statsd-client
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
