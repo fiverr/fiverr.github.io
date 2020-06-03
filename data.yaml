@@ -44,6 +44,16 @@ projects:
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
+  - title: Axios Inheritance
+    link: https://github.com/fiverr/axios-inherit#readme
+    reponame: axios-inherit
+    language: Javascript
+    description: Add interceptor inheritance to axios.
+  - title: Page Timing
+    link: https://github.com/fiverr/page-timing#readme
+    reponame: page-timing
+    language: Javascript
+    description: Measure browser page performance timing and reduce it to a results object using the navigation timing API.
 links:
   - title: Visit our Github page
     link: https://github.com/fiverr
