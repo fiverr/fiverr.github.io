@@ -44,6 +44,11 @@ projects:
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
+  - title: PerimeterX Axios Interceptor
+    link: https://github.com/fiverr/perimeterx-axios-interceptor#readme
+    reponame: perimeterx-axios-interceptor
+    language: Javascript
+    description: Intercept requests which are blocked by PerimeterX - pop up the challenge and retry the request
   - title: Axios Inheritance
     link: https://github.com/fiverr/axios-inherit#readme
     reponame: axios-inherit
