@@ -56,7 +56,6 @@ workflows:
             branches:
               only:
                 - build
-
   scheduled:
     jobs:
       - build
@@ -67,4 +66,4 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - build
