@@ -61,8 +61,6 @@ workflows:
       - build
     triggers:
       - schedule:
-          context: org-global
-          # Every day at 12:00
           cron: "0 12 * * *"
           filters:
             branches:
