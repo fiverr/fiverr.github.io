@@ -6,29 +6,29 @@ html, body {
     min-height: 100%;
 }
 body {
-    font: 100 100%/1.4 -apple-system,"BlinkMacSystemFont","Helvetica Neue","Helvetica","Lucida Grande","Arial",sans-serif;
+    font: 100 100%/1.4 'Macan', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding-bottom: 6em;
 }
 footer, main {
     max-width: 1024px;
     margin: 0 auto;
 }
-header, footer {
-    padding: 1em;
-}
-main {}
 header {
-    background: #1dbf73;
-    color: white;
+    background: #fff;
+    color: #1dbf73;
     text-align: center;
-    padding: 3em 0;
+    padding: 3em;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #003912;
 
     img {
-        height: 8em;
-        margin-bottom: 2em;
+        margin: 0 0 1em;
     }
 }
 a {
     text-decoration: none;
     color: inherit;
+}
+footer {
+    padding: 1em;
 }
