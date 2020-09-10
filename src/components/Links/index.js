@@ -12,9 +12,18 @@ const Links = ({ articles, links }) => (
         }
         {
             articles.map(
-                ({ title, link }) => (
+                ({ title, link, categories }) => (
                     <a key={link} href={link} rel={rel}>
                         { title }
+                        { categories.length
+                            ? <ul>
+                                { categories.map(
+                                    (category) => <li key={category}>{ category }</li>
+                                )
+                                }
+                            </ul>
+                            : null
+                        }
                     </a>
                 )
             )
@@ -40,7 +49,8 @@ const Links = ({ articles, links }) => (
 Links.propTypes = {
     articles: arrayOf(exact({
         title: string,
-        link: string
+        link: string,
+        categories: arrayOf(string)
     })),
     links: arrayOf(exact({
         title: string,

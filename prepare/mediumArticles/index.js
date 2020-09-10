@@ -9,11 +9,18 @@ module.exports = async() => {
 
 const extract = ({ elements: [ { elements: [ { elements } ] } ] }) => elements.filter(({ name }) => name === 'item').map(pull);
 
-const pull = ({ elements }) => ({
-    title: content(elements.find(({ name }) => name === 'title').elements.pop())
-        .replace(/[^\x00-\x7F]/g, '').trim(), // eslint-disable-line no-control-regex
-    link: content(elements.find(({ name }) => name === 'link').elements.pop())
-        .replace(/\?.*$/, '')
-});
+const pull = ({ elements }) => {
+    const [ title ] = elements.find(({ name }) => name === 'title').elements;
+    const [ link ] = elements.find(({ name }) => name === 'link').elements;
+    const categories = elements.filter(({ name }) => name === 'category').map(({ elements }) => elements.pop());
+
+    return {
+        title: content(title).replace(/[^\x00-\x7F]/g, '').trim(), // eslint-disable-line no-control-regex
+        link: content(link).replace(/\?.*$/, ''),
+        categories: categories
+            ? categories.map(content)
+            : []
+    };
+};
 
 const content = (element) => element[element.type];

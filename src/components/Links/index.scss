@@ -1,5 +1,6 @@
 .links {
     > a {
+        display: block;
         margin: 0 .5em 0 0;
 
         &:hover {
@@ -18,7 +19,29 @@
 
         &::after {
             content: "\A";
-            white-space: pre;
+            clear: both;
+            display: block;
+        }
+
+        ul {
+            float: right;
+        }
+        ul, li {
+            display: inline-block;
+        }
+        li {
+            font-size: .7em;
+            font-weight: 400;
+            color: #1dbf73;
+            border: 1px solid #1dbf73;
+            margin: 0 0 0 .5em;
+            padding: 0 .5em .1em;
+            border-radius: 1em;
+            vertical-align: middle;
+        }
+        &:hover li {
+            color: #003912;
+            border-color: #003912;
         }
     }
 }
