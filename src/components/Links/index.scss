@@ -43,5 +43,10 @@
             color: #003912;
             border-color: #003912;
         }
+        @media only screen and (max-width: 800px) {
+          ul {
+            display: none;
+          }
+        }
     }
 }

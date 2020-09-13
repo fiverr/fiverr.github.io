@@ -16,14 +16,23 @@ footer, main {
 }
 header {
     background: #fff;
-    color: #1dbf73;
+    color: #003912;
     text-align: center;
     padding: 3em;
     margin: 0 0 1em;
     border-bottom: 1px solid #003912;
+    letter-spacing: -2px;
 
-    img {
-        margin: 0 0 1em;
+    .icon {
+        background: #1dbf73;
+        border-radius: 5px;
+        padding: 21px 27px 21px 25px;
+    }
+    .logo {
+        height: .75em;
+    }
+    h1 {
+        margin: .5em 0 0;
     }
 }
 a {
