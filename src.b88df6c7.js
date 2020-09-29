@@ -38,4 +38,4 @@ var e;!function(){"use strict";var r={}.hasOwnProperty;function n(){for(var e=[]
 },{"react":"n8MK","prop-types":"D9Od","../../consts":"fFEy","./index.scss":"piKo"}],"Focm":[function(require,module,exports) {
 "use strict";var e=s(require("react")),r=s(require("react-dom")),t=s(require("../data.yaml")),u=s(require("../info.json")),a=s(require("./components/Cards")),l=s(require("./components/Links"));function s(e){return e&&e.__esModule?e:{default:e}}require("./index.scss"),r.default.render(e.default.createElement(a.default,{projects:t.default.projects,stars:u.default.stars}),document.querySelector("main")),r.default.render(e.default.createElement(l.default,{articles:u.default.articles,links:t.default.links}),document.querySelector("footer"));
 },{"react":"n8MK","react-dom":"NKHc","../data.yaml":"cGLI","../info.json":"YD1d","./components/Cards":"W6Gi","./components/Links":"cZxF","./index.scss":"piKo"}]},{},["Focm"], null)
-//# sourceMappingURL=src.8cfecf85.js.map
+//# sourceMappingURL=src.b88df6c7.js.map
