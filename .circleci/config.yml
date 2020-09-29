@@ -15,8 +15,8 @@ jobs:
       - run:
           name: Set user
           command: |
-            git config --global user.name $CIRCLE_USERNAME &&
-            git config --global user.email ${CIRCLE_USERNAME}@users.noreply.github.com
+            git config --global user.name fiverrbot &&
+            git config --global user.email githubbot@fiverr.com
       - run:
           name: Clone master branch
           command: git clone -b master --single-branch $CIRCLE_REPOSITORY_URL dist
