@@ -64,6 +64,16 @@ projects:
     reponame: page-timing
     language: Javascript
     description: Measure browser page performance timing and reduce it to a results object using the navigation timing API.
+  - title: Failed to Load
+    link: https://github.com/fiverr/failed-to-load#readme
+    reponame: failed-to-load
+    language: Javascript
+    description: Find script tags that have failed to load before window.load
+  - title: Event Custodian
+    link: https://github.com/fiverr/event-custodian#readme
+    reponame: event-custodian
+    language: Javascript
+    description: Take responsibility for listeners on event emitter and look after them
 links:
   - title: Visit our Github page
     link: https://github.com/fiverr
