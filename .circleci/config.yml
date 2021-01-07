@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Install dependencies
-          command: npm i --omit=peer
+          command: npm i
       - run:
           name: Verify syntax
           command: npm run lint
