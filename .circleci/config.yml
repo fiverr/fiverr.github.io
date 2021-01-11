@@ -33,6 +33,9 @@ jobs:
           name: Add CNAME
           command: echo "opensource.fiverr.com" > dist/CNAME
       - run:
+          name: Add void CI script
+          command: cp -r ./static/.circleci dist/
+      - run:
           name: Check for changes
           command: |
             cd dist &&
