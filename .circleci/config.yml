@@ -1,0 +1,10 @@
+version: 2.1
+jobs:
+  build:
+    branches:
+      ignore:
+        - master
+    docker:
+      - image: circleci/slim-base
+    steps:
+      - run: echo "No automation for this branch"
