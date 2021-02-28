@@ -1,9 +1,15 @@
 version: 2.1
+workflows:
+  version: 2.1
+  ci:
+    jobs:
+      - nothing:
+          filters:
+            branches:
+              ignore:
+                - master
 jobs:
-  build:
-    branches:
-      ignore:
-        - master
+  nothing:
     docker:
       - image: circleci/slim-base
     steps:
