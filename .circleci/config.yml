@@ -3,12 +3,14 @@ workflows:
   version: 2.1
   ci:
     jobs:
-      - ignore:
+      - nothing:
           filters:
             branches:
               ignore:
                 - master
-        docker:
-          - image: circleci/slim-base
-        steps:
-          - run: echo "No automation for this branch"
+jobs:
+  nothing:
+    docker:
+      - image: circleci/slim-base
+    steps:
+      - run: echo "No automation for this branch"
