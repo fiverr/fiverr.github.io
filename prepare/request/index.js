@@ -7,7 +7,8 @@ module.exports = (url, options = {}) => new Promise(
         (result) => {
             const data = [];
             const { statusCode } = result;
-            if (Math.floor(statusCode / 100) !== 2) {
+            const digit = Math.floor(statusCode / 100);
+            if (![2, 3].includes(digit)) {
                 reject(`Request to ${url} resulted in status ${statusCode} (${JSON.stringify(result.headers)}).`);
                 return;
             }
