@@ -39,6 +39,11 @@ projects:
     reponame: node-es-slow-log-parse
     language: Javascript
     description: Parse Elasticsearch log lines.
+  - title: loggerr
+    link: https://pypi.org/project/loggerr/
+    reponame: python-loggerr
+    language: python
+    description: Zero configuration JSON logger(r)
   - title: I18n
     link: https://github.com/fiverr/i18n.js
     reponame: i18n.js
