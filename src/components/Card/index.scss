@@ -23,6 +23,7 @@
         transition: box-shadow .2s ease-out;
         display: flex;
         align-items: flex-end;
+        white-space: break-spaces;
     }
 
     .language-badge {
@@ -30,7 +31,7 @@
         font-size: .8em;
         margin: 1.4em 1em 0em 0.5em;
         font-weight: 400;
-        padding: 0 .4em;
+        padding: 0.2em 0.4em 0;
         border-radius: .5em;
     }
 

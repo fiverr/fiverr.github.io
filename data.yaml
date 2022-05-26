@@ -1,19 +1,14 @@
 projects:
-  - title: Passable
-    link: https://opensource.fiverr.com/passable/
-    reponame: passable
-    language: Javascript
-    description: Declarative data validations.
-  - title: Rollout Service
-    link: https://github.com/fiverr/rollout_service
-    reponame: rollout_service
-    language: Ruby
-    description: A Grape service that exposes rollout gem via RESTful endpoints.
-  - title: Rollout Dashboard
-    link: https://github.com/fiverr/rollout_dashboard
-    reponame: rollout_dashboard
+  - title: "Health Check\n→ On-Call"
+    link: https://github.com/fiverr/health-check-to-splunk-on-call
+    reponame: health-check-to-splunk-on-call
     language: TypeScript
-    description: Rollout-Dashboard is a beautiful user interface for rollout gem.
+    description: Cloudflare Edge Worker to relay Health Check messages to Splunk On-Call (FKA Victorops).
+  - title: PerimeterX Axios Interceptor
+    link: https://github.com/fiverr/perimeterx-axios-interceptor#readme
+    reponame: perimeterx-axios-interceptor
+    language: Javascript
+    description: Intercept requests which are blocked by PerimeterX - pop up the challenge and retry the request
   - title: AfterBuild Webpack Plugin
     link: https://github.com/fiverr/afterbuild-webpack-plugin
     reponame: afterbuild-webpack-plugin
@@ -22,7 +17,7 @@ projects:
   - title: pyresolve
     link: https://pypi.org/project/pyresolve/
     reponame: pyresolve
-    language: python
+    language: Python
     description: Resolve dot notation from dictionary
   - title: RDS slowlog parse
     link: https://github.com/fiverr/node-rds-slow-log-parse
@@ -42,23 +37,28 @@ projects:
   - title: loggerr
     link: https://pypi.org/project/loggerr/
     reponame: python-loggerr
-    language: python
+    language: Python
     description: Zero configuration JSON logger(r)
   - title: I18n
     link: https://github.com/fiverr/i18n.js
     reponame: i18n.js
     language: Javascript
     description: Isomorphic translation engine. Mimics Rails' i18n interface.
+  - title: Rollout Service
+    link: https://github.com/fiverr/rollout_service
+    reponame: rollout_service
+    language: Ruby
+    description: A Grape service that exposes rollout gem via RESTful endpoints.
+  - title: Rollout Dashboard
+    link: https://github.com/fiverr/rollout_dashboard
+    reponame: rollout_dashboard
+    language: TypeScript
+    description: Rollout-Dashboard is a beautiful user interface for rollout gem.
   - title: StatsD Client
     link: https://opensource.fiverr.com/node-statsd-client
     reponame: node-statsd-client
     language: Javascript
     description: A feature packed StatsD client with plenty of configuration options.
-  - title: PerimeterX Axios Interceptor
-    link: https://github.com/fiverr/perimeterx-axios-interceptor#readme
-    reponame: perimeterx-axios-interceptor
-    language: Javascript
-    description: Intercept requests which are blocked by PerimeterX - pop up the challenge and retry the request
   - title: Axios Inheritance
     link: https://github.com/fiverr/axios-inherit#readme
     reponame: axios-inherit
