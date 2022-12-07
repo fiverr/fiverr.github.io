@@ -19,6 +19,11 @@ projects:
     reponame: pyresolve
     language: Python
     description: Resolve dot notation from dictionary
+  - title: Periodic Lighthouse Scores Report
+    link: https://hub.docker.com/r/fiverr/lighthouse-scores-to-email
+    reponame: lighthouse-scores-to-email
+    language: Docker
+    description: Send simple PageSpeed scores to your email.
   - title: RDS slowlog parse
     link: https://github.com/fiverr/node-rds-slow-log-parse
     reponame: node-rds-slow-log-parse
@@ -64,11 +69,6 @@ projects:
     reponame: axios-inherit
     language: Javascript
     description: Add interceptor inheritance to axios.
-  - title: Page Timing
-    link: https://github.com/fiverr/page-timing#readme
-    reponame: page-timing
-    language: Javascript
-    description: Measure browser page performance timing and reduce it to a results object using the navigation timing API.
   - title: Failed to Load
     link: https://github.com/fiverr/failed-to-load#readme
     reponame: failed-to-load
