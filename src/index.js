@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import data from '../data.yaml';
 import info from '../info.json';
 import Cards from './components/Cards';
 import Links from './components/Links';
 import './index.scss';
 
-ReactDOM.render(<Cards projects={data.projects} stars={info.stars}/>, document.querySelector('main'));
-ReactDOM.render(<Links articles={info.articles} links={data.links}/>, document.querySelector('footer'));
+createRoot(document.querySelector('main')).render(<Cards projects={data.projects} stars={info.stars}/>);
+createRoot(document.querySelector('footer')).render(<Links articles={info.articles} links={data.links}/>);
 
 console.log([
     '5555555555555555555555555555555555555',

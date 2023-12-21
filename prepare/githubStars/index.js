@@ -1,9 +1,9 @@
 const { readFile } = require('fs').promises;
-const { safeLoad } = require('js-yaml');
+const { load } = require('js-yaml');
 const request = require('../request');
 
 module.exports = async({ token }) => {
-    const { projects } = safeLoad(await readFile('data.yaml'));
+    const { projects } = load(await readFile('data.yaml'));
     const repositories = projects.map(({ reponame }) => reponame);
 
     const results = await Promise.all(
